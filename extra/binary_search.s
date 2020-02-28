@@ -11,11 +11,11 @@ Reset_Handler
 
 		ldr r0,=src
 		ldr r1,[r0]
-		mov r2,#0     ; low
-		mov r3,#9   ; high
+		mov r2,#0     ; low             
+		mov r3,#9   ; high             /// SET HIGH ACC TO SIZE OF ARRAY MINUS ONE
 		add r4,r3,r2  ; value = r3+r2
 		mov r5,#4   ; for mid
-		mov r6,#10  ; ele to search
+		mov r6,#10  ; ele to search  ////   CHANGE ACC TO WHAT YOU WANT TO SEARCH
 		ldr r7,=pos   ; for ans
 		mov r8,#0  ; stores address to be checked
 		mov r9,#0  ; for changing address
@@ -67,7 +67,7 @@ ans	str r5,[r7]
 stop
 		b stop
 
-src	dcd  1,2,3,4,5,6,7,8,9,10
+src	dcd  1,2,3,4,5,6,7,8,9,10            /// CHANG ARRAY HERE ACCORDINGLY
 N		dcd 10
 		area mydata,data,readwrite
 pos	dcd 0
