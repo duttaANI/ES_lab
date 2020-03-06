@@ -16,7 +16,7 @@ int main(void)
 		SystemCoreClockUpdate();
 	
 		LPC_PINCON->PINSEL0 = 0x0; // or 0xFF0000FF P0.4 to P0.11 
-		LPC_PINCON->PINSEL3 = 0x0;
+		LPC_PINCON->PINSEL3 = 0x0; // or P2.23 to P2.26
 		LPC_GPIO0->FIODIR=0XFF<<4;
 		LPC_GPIO1->FIODIR=0XF<<23;
 		while(1)
