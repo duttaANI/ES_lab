@@ -1,7 +1,7 @@
 		area reset, data, readonly
 		export __Vectors
 __Vectors
-		dcd 0x10001000
+		dcd 0x10001000 ; this is the address where push , pop operations commence, or address of stack
 		dcd Reset_Handler
         align
 		area mycode,CODE,readonly
