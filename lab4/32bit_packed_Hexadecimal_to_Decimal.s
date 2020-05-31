@@ -18,9 +18,9 @@ Reset_Handler
 		mov r3,#1
 up		mov r6,r2
 		and r6,r7
-		mla r5,r6,r3,r5
+		mla r5,r6,r3,r5 ; mla => multiply and add
 		mul r3,r4
-		lsr r2,#4
+		lsr r2,#4 ; lsr => left shift register
 		cmp r2,#0
 		bne up
 		
