@@ -1,6 +1,10 @@
 # ES_lab
 
-1. ARM Cortex M is byte addressable
+1. ARM Cortex M is **32 bit byte addressable** 
+
+   address range : 00 00 00 00 to FF FF FF FF
+   
+   00 => is one byte => 8bits 
 
 2. Imp table for branching while using **CMP** command in keil
 
