@@ -1,4 +1,6 @@
-# ES_lab
+# Embedded Systems lab
+
+## ARM Cortex M & LPC1768
 
 1. ARM Cortex M is **32 bit byte addressable** 
 
